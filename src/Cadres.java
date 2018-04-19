@@ -1,5 +1,7 @@
 public class Cadres extends Ouvriers {
 
+    public Cadres() {super();}
+
     public Cadres(String nom, int age, String telephone)
     {
         super(nom, age, telephone);

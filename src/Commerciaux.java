@@ -2,6 +2,8 @@ public class Commerciaux extends Employees implements Salaire_pourcentage {
 
     private double chiffre_affaire;
 
+    public Commerciaux() {super();}
+
     public Commerciaux(String nom, int age, String telephone) {
         super(nom, age, telephone);
     }
@@ -12,8 +14,9 @@ public class Commerciaux extends Employees implements Salaire_pourcentage {
     }
 
     @Override
-    public void getSalaire() {
-        this.salaire = chiffre_affaire / (((double)pourcentage_chiffre_affaire / 100) + 1);
+    public double getSalaire() {
+        this.salaire = chiffre_affaire * ((double)pourcentage_chiffre_affaire / 100);
+        return salaire;
     }
 
     @Override

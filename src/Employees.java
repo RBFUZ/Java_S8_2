@@ -3,7 +3,9 @@ public abstract class Employees {
     private String name;
     private int age;
     private String telephone;
-    protected double salaire;
+    protected double salaire = 0;
+
+    public Employees() {}
 
     public Employees(String name, int age, String telephone)
     {
@@ -17,7 +19,7 @@ public abstract class Employees {
     /**
      * Calcul du salaire de l'employée courant
      */
-    public abstract void getSalaire();
+    public abstract double getSalaire();
 
     /**
      * Retourne le salaire de l'employée
@@ -27,4 +29,18 @@ public abstract class Employees {
     {
         return salaire;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() { return age; }
+
+    public void setAge(int age) { this.age = age; }
+
+    public String getTelephone() { return telephone; }
+
+    public void setTelephone(String telephone) { this.telephone = telephone; }
+
+    public void setSalaire(double salaire) { this.salaire = salaire; }
 }
