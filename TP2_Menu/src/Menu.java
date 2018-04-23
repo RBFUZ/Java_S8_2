@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Menu {
 
     private static Scanner reader;
-    private final static int N = 5;
+    private static int N;
 
     public Menu()
     {
@@ -23,6 +23,8 @@ public class Menu {
             tableau.add("Ouvrir un projet");
             tableau.add("Imprimer");
             tableau.add("Quitter");
+
+            N = tableau.size();
 
             choix = menu.questionReponse(tableau);
 
