@@ -1,9 +1,8 @@
 public class JeuxVideo extends Divertissement {
 
-    public JeuxVideo() {super();}
-
     public JeuxVideo(String nom)
     {
-        super(nom);
+        this.nom = nom;
+        this.duree = DUREE_HEURE_MAX;
     }
 }
