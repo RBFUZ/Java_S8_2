@@ -97,6 +97,19 @@ public class ProgrammePrincipal {
                     case 20:
                         myList.estVide();
                         break;
+                    case 21:
+                        System.out.println("Quel sont les éléments à comparer ? (laisser le champs vide pour terminer la saisie) : ");
+                        MyList myList_2 = new MyList();
+                        element = sc.nextLine();
+
+                        while (!element.equals(""))
+                        {
+                            myList_2.ajouterElement(element);
+                            element = sc.nextLine();
+                        }
+
+                        myList.comparer(myList.getL_list(), myList_2.getL_list());
+                        break;
                     default:
                         afficherMenu();
                         break;
