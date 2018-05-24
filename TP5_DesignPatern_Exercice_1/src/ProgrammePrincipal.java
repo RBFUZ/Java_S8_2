@@ -43,10 +43,10 @@ public class ProgrammePrincipal {
     ma_figure.addFigure(cercle_1);
 
     // Dessiner ma_figure
-    ma_figure.dessinerLaFigure();
+    ma_figure.dessine();
 
     // Translater ma_figure
-    ma_figure.translaterLaFigure();
+    ma_figure.translate();
 
     // Afficher la taille de la figure
     ma_figure.getTaille();
